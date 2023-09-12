@@ -4,6 +4,7 @@
         returnedFromPHP($input);
     }
 
-function returnedFromPHP($str){
+function returnedFromPHP($str): void
+{
     echo "Your input has been processed in PHP! Here is the input: ". $str;
 }

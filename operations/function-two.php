@@ -4,6 +4,8 @@
 function add($num1 = 1, $num2 = 1){
     if($_POST["num1"] === "" && $_POST["num2"] === ""){
         echo "Both inputs are empty! We will now add the default values; which is 1<br>";
+        $num1 = 1;
+        $num2 = 1;
     }elseif ($_POST["num1"] === "" || $_POST["num2"] === ""){
         echo "An input is empty! Adding 1 to the other value...<br>";
         if($_POST["num1"] === ""){
