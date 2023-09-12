@@ -34,8 +34,8 @@
         </div>
     </section>
 
-    <section class="section" id="arrays-one">
-        <div class="container">
+    <section class="section hidden-first" id="arrays-one">
+        <div class="container example-odd">
             <div class="inner-container">
                 <article class="article article-right">
                     <h1 class="article-title">Function Example 1</h1>
@@ -46,8 +46,8 @@
         </div>
     </section>
 
-    <section class="section" id="arrays-two">
-        <div class="container">
+    <section class="section hidden-first" id="arrays-two">
+        <div class="container example-even">
             <div class="inner-container">
                 <article class="article article-left">
                     <h1 class="article-title">Function Example 2</h1>

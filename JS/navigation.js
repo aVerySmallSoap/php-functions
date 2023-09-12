@@ -17,9 +17,21 @@ window.addEventListener("scroll", () => {
         let scrolled = window.scrollY;
         let elemTop =  selection[i].getBoundingClientRect().top;
         let elemHeight = selection[i].offsetHeight;
-        if(elemTop <= scrolled && scrolled < elemTop + elemHeight){
+        if(elemTop<= scrolled && scrolled < elemTop + elemHeight){
             for (const elem of listItem) {
                 elem.className = "nav-section";
+            }
+            for (let j = 1; j < i+1; j++) {
+                if(j%2===0){
+                    selection[j].style.transition = "2s ease-in";
+                    selection[j].style.animation = "2s section-fadeIn";
+                    selection[j].style.opacity = "1";
+                }else{
+                    selection[j].style.transition = "2s ease-in";
+                    selection[j].style.animation = "2s section-right-fadeIn";
+                    selection[j].style.opacity = "1";
+                }
+
             }
             listItem[i].className = "nav-section active";
         }
