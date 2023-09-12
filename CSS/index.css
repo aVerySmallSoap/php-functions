@@ -3,31 +3,31 @@
 @keyframes section-fadeIn {
     from{
         opacity: 0;
-        transform: translateX(-100px);
+        left: -100px;
     }
     to{
         opacity: 1;
-        transform: translateX(0);
+        left: 0;
     }
 }
 
 @keyframes section-right-fadeIn {
     from{
         opacity: 0;
-        transform: translateX(100px);
+        right: -100px;
     }
     to{
         opacity: 1;
-        transform: translateX(0);
+        right: 0;
     }
 }
 
 .section{
     display: grid;
-    box-sizing: border-box;
+    position: relative;
     height: 600px;
     max-height: 600px;
-    overflow-x: hidden;
+    overflow: hidden;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 25% 50% 25%;
 }
@@ -46,9 +46,51 @@
     font-family: "Poppins", sans-serif;
 }
 
+.title-container{
+    grid-column: 2;
+}
+
 .inner-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 25% 25%;
     grid-column: span 3;
     grid-row: 2;
+}
+
+.center-article{
+    grid-column: 2;
+    text-align: center !important;
+}
+
+.subtitle-container{
+    grid-row: span 3;
+}
+
+.description a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.subtitle-right{
+    grid-column: 3;
+}
+
+.article-container{
+   grid-row: span 3
+}
+
+.article{
+    text-align: left;
+}
+
+.article-example{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#output{
+    font-size: 26px;
 }
 
 .example-odd{

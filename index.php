@@ -24,9 +24,11 @@
 
     <section class="section" id="home">
         <div class="container">
-            <div class="inner-container">
-                <article class="article">
-                    <h1 class="article-title">PHP Function Examples</h1>
+            <div class="title-container">
+                <h1 class="article-title">PHP Function Examples</h1>
+            </div>
+            <div class="inner-container ">
+                <article class="article center-article">
                     <h4 class="sub-heading">Learn the different kinds of array implementations!</h4>
                     <p></p>
                 </article>
@@ -34,31 +36,63 @@
         </div>
     </section>
 
-    <section class="section hidden-first" id="arrays-one">
+    <div class="section hidden-first" id="functions-one">
         <div class="container example-odd">
+            <div class="title-container">
+                <h1 class="article-title">The Basics of PHP Functions</h1>
+            </div>
             <div class="inner-container">
-                <article class="article article-right">
-                    <h1 class="article-title">Function Example 1</h1>
-                    <h4 class="sub-heading"></h4>
-                    <p></p>
-                </article>
+                <div class="subtitle-container subtitle-left">
+                    <h4 class="sub-heading">The very basics of functions</h4>
+                    <article class="description">
+                        <p>Functions are a block of statements that can be used repeatedly in a program.</p>
+                    </article>
+                </div>
+                <div class="article-container article-example">
+                    <article class="article article-right">
+                        For example, if you were to input any text in the box below and click the submit button,
+                        it will display what you wrote in the adjacent space
+                    </article>
+                    <form id="userForm">
+                        <input type="text" name="user-input" id="input">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+                <div class="article-container article-output">
+                    <article class="article article-right">
+                        <span id="output"></span>
+                    </article>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="section hidden-first" id="arrays-two">
+    <section class="section hidden-first" id="functions-two">
         <div class="container example-even">
+            <div class="title-container">
+                <h1 class="article-title">Function Example 2</h1>
+            </div>
             <div class="inner-container">
-                <article class="article article-left">
-                    <h1 class="article-title">Function Example 2</h1>
-                    <h4 class="sub-heading"></h4>
-                    <p></p>
-                </article>
+                <div class="subtitle-container subtitle-right">
+                    <h4 class="sub-heading">What are parameters???</h4>
+                    <article class="description">
+                    </article>
+                </div>
+                <div class="article-container article-example">
+                    <article class="article article-left">
+                        <p></p>
+                    </article>
+                </div>
+                <div class="article-container article-output">
+                    <article class="article article-left">
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
 <script src="./JS/navigation.js"></script>
+<script src="./JS/function-one.js"></script>
 
 </body>
 </html>

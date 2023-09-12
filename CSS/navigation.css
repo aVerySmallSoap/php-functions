@@ -13,6 +13,7 @@
     width: 100%;
     background-color: var(--secondary);
     font-family: "Poppins", sans-serif;
+    z-index: 1;
 }
 
 .nav-inner{
