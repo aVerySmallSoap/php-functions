@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
         let scrolled = window.scrollY;
         let elemTop =  selection[i].getBoundingClientRect().top;
         let elemHeight = selection[i].offsetHeight;
-        if(elemTop<= scrolled && scrolled < elemTop + elemHeight){
+        if(elemTop<= scrolled && scrolled < elemTop + elemHeight - 150){
             for (const elem of listItem) {
                 elem.className = "nav-section";
             }
